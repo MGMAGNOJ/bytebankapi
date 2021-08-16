@@ -1,10 +1,10 @@
-import 'package:bytebankapp/database/database.dart';
-import 'package:bytebankapp/models/contatos.dart';
 import 'package:bytebankapp/screens/dashboard/dashboard.dart';
+import 'package:bytebankapp/web-api/webclient.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MyApp());
+  findAll();
 }
 
 class MyApp extends StatelessWidget {
