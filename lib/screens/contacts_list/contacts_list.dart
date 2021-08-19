@@ -42,7 +42,6 @@ class _ContactsListState extends State<ContactsList> {
                   ],
                 ),
               );
-              break;
             case ConnectionState.active:
               // Status durante o processamento.
               break;
