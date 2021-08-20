@@ -3,7 +3,7 @@ import 'package:bytebankapp/models/contatos.dart';
 import 'package:sqflite/sqflite.dart';
 
 class ContatoDAO {
-  static final String createTableSQL = 'CREATE TABLE contatos('
+  static final String createTableSQL = 'CREATE TABLE $_tableName ('
       '$_id INTEGER PRIMARY KEY, '
       '$_nome TEXT, '
       '$_numeroDaConta INTEGER)';
