@@ -15,13 +15,12 @@ class TransactionsList extends StatelessWidget {
       body: FutureBuilder<List<Transaction>>(
         future: findAll(),
         builder: (context, snapshot) {
-          final List<Transaction>? transactions = snapshot.data;
+          //final List<Transaction>? transactions = snapshot.data;
           switch (snapshot.connectionState) {
             case ConnectionState.none:
               break;
             case ConnectionState.waiting:
               return Waiting();
-              break;
             case ConnectionState.active:
               break;
             case ConnectionState.done:
@@ -54,7 +53,6 @@ class TransactionsList extends StatelessWidget {
                     },
                     itemCount: transactions.length,
                   );
-                  break;
                 }
               }
               return CenteredMessage("Nenhuma transação encontrada");
