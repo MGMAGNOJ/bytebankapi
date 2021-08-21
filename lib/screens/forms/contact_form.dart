@@ -64,9 +64,9 @@ class _ContactsFormState extends State<ContactsForm> {
                     final String _nome = _nameEditingController.text;
                     // solução para checagem de int no campo text.
                     // IMPORTANTE
-                    final String _conta_text = _contaEditingController.text;
-                    int _conta = int.tryParse(_conta_text) != null
-                        ? int.parse(_conta_text)
+                    final String _conta_Text = _contaEditingController.text;
+                    int _conta = int.tryParse(_conta_Text) != null
+                        ? int.parse(_conta_Text)
                         : 0;
                     // agora sim executar o processamento
                     final Contato novoContato = Contato(0, _nome, _conta);
