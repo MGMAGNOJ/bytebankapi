@@ -8,4 +8,14 @@ class Contato {
   String toString() {
     return 'Nome: {valor: $nome, conta: $numeroDaConta}';
   }
+
+  Contato.fromJson(Map<String, dynamic> json)
+      : id = json["id"] != null ? (json['id']) : 0,
+        nome = json['name'],
+        numeroDaConta = json['accountNumber'];
+
+  Map<String, dynamic> toJson() => {
+    'name': nome,
+    'accountNumber': numeroDaConta,
+  };
 }
