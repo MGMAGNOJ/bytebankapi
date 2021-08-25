@@ -29,7 +29,7 @@ class _ContactsListState extends State<ContactsList> {
         builder: (context, snapshot) {
           switch (snapshot.connectionState) {
             case ConnectionState.none:
-              // TODO: Cenario em que o Future não foi executado (Pode ser um botão de Refresh)
+              // Cenario em que o Future não foi executado (Pode ser um botão de Refresh)
               break;
             case ConnectionState.waiting:
               // Apresenta o Loading na tela
