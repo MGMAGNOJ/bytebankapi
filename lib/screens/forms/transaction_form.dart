@@ -73,9 +73,9 @@ class _TransactionFormState extends State<TransactionForm> {
                                 _transactionWebClient
                                     .save(transactionCreated, password)
                                     .then((transaction) {
-                                  if (transaction != null) {
-                                    Navigator.of(context).pop();
-                                  }
+                                  //if (transaction != null) {
+                                  Navigator.of(context).pop();
+                                  //}
                                 });
                               },
                             );
